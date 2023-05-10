@@ -1,7 +1,7 @@
 package ru.netology;
 
+
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -15,7 +15,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class CardDeliveryTest {
     @Test
     public void shouldFormSubmission() {
-        Configuration.headless = true;
 
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Майкоп");
